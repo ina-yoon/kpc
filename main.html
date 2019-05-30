@@ -23,7 +23,7 @@
       <nav class="navigation">
         <h2 class="readable-hidden">메인 메뉴</h2>
         <ul class="menu">
-          <li class="menu-item">
+          <li class="menu-item menu-act">
             <span class="menu-item-text">HTML에 대해</span>
             <ul class="sub-menu sub-menu1">
               <li><a href="#">HTML5 소개</a></li>
@@ -121,14 +121,14 @@
     </header>
     <div class="visual">
       <p class="visual-text">
-        Web Standards &amp; Accessibility
+          Web Standard  &amp; Accessibility 
       </p>
     </div>
     <main class="main">
       <div class="group group1">
         <section class="login">
           <h2 class="login-heading">로그인</h2>
-          <form action="https://formspree.io/seulbinim@gmail.com" method="POST" class="login-form">
+          <form action="https://formspree.io/csw392@gmail.com" method="POST" class="login-form">
             <fieldset>
               <legend>회원 로그인 폼</legend>
               <div class="user-email">
@@ -150,7 +150,7 @@
         <h2 class="readable-hidden">유효성 검사 배너</h2>
         <ul class="validation-list">
           <li>
-            <a href="https://validator.w3.org/" target="_blank" title="마크업 유효성 검사 사이트로 이동(새창)">
+            <a  href="https://validator.w3.org/"  target="_blank" title="마크업 유효성 검사 사이트로 이동(새창)" >
               W3C Markup Validation
             </a>
           </li>
@@ -162,18 +162,34 @@
         </ul>
         <section class="term">
           <h2 class="term-heading">웹 관련 용어</h2>
-          <dl class="term-list clearfix">
+
+          <dl class="term-list">
+              <div class="clearfix">
             <dt class="term-list-subject">웹 표준 이란?</dt>
-            <dd class="term-list-thrmbnail">
+            <dd class="term-list-thumbnail">
               <img src="images/web_standards.gif" alt="">
-            </dd>                
-            <dd class="term-list-brief">
-              W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
             </dd>
+            <dd class="term-list-brief">
+              W3C 단체에서 규정한 웹 기술 사양에 
+              대한 규칙을 말하며 표준 규격은...
+            </dd>
+          </div>
           </dl>
         </section>
       </div>
-      <div class="group group2">그룹2</div>
+      <div class="group group2">
+        <h2 class="readable-hidden">"검색"</h2>
+        <form action="http://formspree.io/yoonina91@gmail.com" method="POST" class="search-form">
+        <fieldset>
+          <legend>검색 폼</legend>
+          <label for="search" class"icon-search">자료검색</label>
+          <input name="keyword" type="search" id="search" required placeholder="검색어를 입력하세요.">
+        <button class="btn-search" type="submit">검색</button>
+        </fieldset>
+        </form>
+        </form>
+      </div>
+
       <div class="group group3">그룹3</div>
     </main>
     <article class="slogan">슬로건</article>
