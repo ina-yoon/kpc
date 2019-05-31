@@ -446,47 +446,33 @@ a{
   top: 0;
   right: 0;
 }
-/* 이벤트 
-.event{
-  background: #aaa;
-  border: 1px solid gray;
-  border-radius: 5px;
-}
-.event-thumbnail{
-  padding: 0 0 0 10px;
-}
-.event-heading{
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 10px 0 0 10px;
-}
-.event-brief{
-  padding: 0 0 0 5px;
-}
-.point-color{
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ed552f;
-}
-.related-heading{
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 10px 0 0 10px;
-}
-*/
 /* 신규이벤트 및 관련사이트 */
 .event-related{
   border: 1px solid #aaa;
   border-radius: 5px;
   background: #ccc linear-gradient(#ccc, #eee);
+  padding: 10px;
 }
 .event{
-  border-bottom: 1px solid #aaa;
   position: relative;
 }
-.event-related{
+.related{
   border-top: 1px solid #aaa;
   padding-top: 10px;
+}
+.event-heading, .related-heading{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.point-color{
+  color: #ed552f;
+}
+.event-thumbnail, .event-brief{
+  margin: 10px 0;
+}
+.event-thumbnail img{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px#aaa;
 }
 .btn-event{
   height: 24px;
@@ -499,7 +485,7 @@ a{
   float: left;
   width: 19px;
   height: 0;
-  padding: 20px 0 0 0;
+  padding:24px 0 0 0;
   margin-left: 5px;
   background: url('images/back_forward.png') no-repeat;
   border: 0;
@@ -512,7 +498,20 @@ a{
   margin-top: 10px;
   border: 1px solid #aaa;
   border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: all .4s;
 }
+.related-list:hover{
+  height: 137px;
+  padding: 5px 0;
+}
+.related-list a{
+  display: block;
+  line-height: 25px;
+  text-indent: 25px;
+}
+
 /* 슬로건 */
 .slogan{
   background: pink;
