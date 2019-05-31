@@ -272,7 +272,7 @@ a{
   color: #ed552f;
   margin: 0;
 }
-/* 유효성 검사 배너 링크 */
+/* 유효성 검사 배너 */
 .validation-list{
   margin-top: 25px;
 }
@@ -288,24 +288,23 @@ a{
 /* 웹 관련 용어 */
 .term{
   margin-top: 20px;
-  border: 1px solid #aaa;
+  border:1px solid #aaa;
   border-radius: 5px;
   background: #ccc linear-gradient(#ccc, #eee);
   padding: 10px 15px;
 }
-.term-heading{
+ .term-heading{
   font-size: 1.5rem;
   font-weight: 700;
 }
 .term-list{
   margin-top: 10px;
 }
-.term-list-subject, .term-list-brief
-{
+.term-list-subject, .term-list-brief{
   float: right;
   width: 145px;
 }
-.term-list-subject{ 
+.term-list-subject{
   color: #296897;
   margin-top: -4px;
 }
@@ -314,10 +313,209 @@ a{
 }
 .term-list-brief{
   margin-top: 5px;
-} 
+}
+/* 검색 폼 */
+.search-form{
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 15px 25px 10px;
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  border-radius: 15px 15px 0 0;
+}
+.search-form *{
+  vertical-align: middle;
+}
+.search-form input{
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 22px;
+  width: 200px;
+  padding: 1px 1px 1px 5px;
+  margin: 0 2px;
+}
+.btn-search{
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: #fff;
+  background: #222;
+  padding: 0 10px;
+  height: 22px;
+  font-size: 1.3rem;
+}
+/* 공지사항 및 자료실 */
+.board{
+  margin-top: 20px;
+  position: relative;
+}
+.tab{
+  position: absolute;
+  top: 0;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  background: #ccc linear-gradient(#ccc, #eee);
+  color: #666;
+  padding:5px 10px;
+  cursor: pointer;
+}
+.tab1{
+  left: 0;
+}
+.tab2{
+  left: 73px;
+}
+.board-act .tab{
+  color: #ed552f;
+  border-color: #ed552f #ed552f #fff #ed552f;
+  background: #fff;
+}
+.board-list{
+  padding-top: 45px;
+}
+.board-list li{
+  position: relative;
+  margin-bottom: 8px;
+}
+.board-subject{
+  display: block;
+  width: 295px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board-date{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.board-more{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.board-more::before, .news-more::before{
+  color: hsla(110, 70%, 30%, 1);
+}
+.board-list, .board-more{
+  display: none;
+}
+.board-act .board-list, .board-act .board-more{
+  display: block;
+}
+/* 새소식 */
+.news{
+  margin-top: 20px;
+  position: relative;
+}
+.news::before{
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background: #aaa linear-gradient(to right, #aaa, #eee);
+}
+.news-heading{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ed552f;
+}
+.news-item{
+  margin-top: 35px;
+  padding-left: 130px;
+  position: relative;
+}
+.news-item-subject{
+  font-weight: 700;
+}
+.news-item-brief{
+  margin-top: 8px;
+}
+.news-item-thumbnail{
+  position: absolute;
+  top: 4px;
+  left: 0;
+  text-align: center;
+}
+.news-item-thumbnail img{
+  margin-bottom: 15px;
+  box-shadow: 0 15px 15px 0 #aaa;
+}
+.news-more{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* 이벤트 
+.event{
+  background: #aaa;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.event-thumbnail{
+  padding: 0 0 0 10px;
+}
+.event-heading{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 0 0 10px;
+}
+.event-brief{
+  padding: 0 0 0 5px;
+}
+.point-color{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ed552f;
+}
+.related-heading{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 0 0 10px;
+}
+*/
+/* 신규이벤트 및 관련사이트 */
+.event-related{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc, #eee);
+}
+.event{
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+.event-related{
+  border-top: 1px solid #aaa;
+  padding-top: 10px;
+}
+.btn-event{
+  height: 24px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-event-prev, .btn-event-next{
+  float: left;
+  width: 19px;
+  height: 0;
+  padding: 20px 0 0 0;
+  margin-left: 5px;
+  background: url('images/back_forward.png') no-repeat;
+  border: 0;
+}
+.btn-event-next{
+  background-position: 100% 0;
+}
+.related-list{
+  background: #fff;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
 /* 슬로건 */
 .slogan{
-  background-color: pink;
+  background: pink;
   height: 10vh;
 }
 /* 푸터 */
