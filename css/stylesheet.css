@@ -603,6 +603,28 @@ a{
   background: #ccc linear-gradient(#ccc 0%, #eee 30%, #fff 70%, #fff 100%);
 }
 .footer{
-  background-color: yellow;
-  height: 10vh;
+  position: relative;
+  padding: 15px 100px 15px 180px;
+}
+.footer-logo{
+  position: absolute;
+  top: 50px;
+  left: 35px;
+}
+.guide-list{
+  background: gray;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  border-radius: 20px;
+}
+.address{
+  margin: 10px 0 5px;
+}
+.badge{
+  position: absolute;
+  top: 15px;
+  right: 0;
 }
