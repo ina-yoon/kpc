@@ -447,7 +447,7 @@ a{
   right: 0;
 }
 /* 신규이벤트 및 관련사이트 */
-.event-related{
+.event-related, .favorite{
   border: 1px solid #aaa;
   border-radius: 5px;
   background: #ccc linear-gradient(#ccc, #eee);
@@ -460,7 +460,7 @@ a{
   border-top: 1px solid #aaa;
   padding-top: 10px;
 }
-.event-heading, .related-heading{
+.event-heading, .related-heading, .favorite-heading{
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -511,7 +511,12 @@ a{
   line-height: 25px;
   text-indent: 25px;
 }
-
+/* 인기 사이트 */
+.favorite-more{
+  /*position: absolute;
+  top: 0;
+  right: 0;*/
+}
 /* 슬로건 */
 .slogan{
   background: pink;
